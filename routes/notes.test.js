@@ -75,6 +75,7 @@ describe("/notes", () => {
       const res1 = await request(server).post("/login").send(user1);
       token1 = res1.body.token;
     });
+
     describe('POST /', () => {
       it('should send 200', async () => {
         const res = await request(server)
